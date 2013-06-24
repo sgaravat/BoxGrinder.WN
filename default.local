@@ -1,0 +1,3 @@
+CVMFS_REPOSITORIES=cms.cern.ch,grid.cern.ch
+CVMFS_HTTP_PROXY="http://t2-squid-01.lnl.infn.it:3128|http://squid.lnl.infn.it:3128"
+
