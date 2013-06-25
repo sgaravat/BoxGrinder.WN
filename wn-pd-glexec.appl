@@ -1,6 +1,6 @@
-name: wn-glexec-9
+name: wn-glexec-10
 summary: glideinWMS SL 5.9
-version: 9
+version: 10
 release: 0
 
 os:
@@ -99,7 +99,6 @@ files:
     - "lcmaps-glexec.db"
 
   "/root":
-    - "siteconf.tgz"
     - "users.conf"
     - "config_users"
 
@@ -114,7 +113,6 @@ post:
     - "cp -f /usr/share/zoneinfo/Europe/Rome /etc/localtime"
     - "sed -i '/kernel/ s|$| selinux=0 console=tty0 console=ttyS0|' /boot/grub/grub.conf" 
     - "mkdir /data"
-    - "cd /;tar xvfz /root/siteconf.tgz"
     - "echo 'priority = 1' >> /etc/yum.repos.d/xrootd-3.3.2.repo"
     - "/sbin/chkconfig yum off"
     - ". /root/config_users"
